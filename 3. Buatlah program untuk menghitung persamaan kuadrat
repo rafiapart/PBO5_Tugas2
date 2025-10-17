@@ -1,0 +1,24 @@
+class PersamaanKuadrat {
+    static double akarKuadrat(double angka) {
+        double hasil = angka / 2;
+        for (int i = 0; i < 10; i++) {
+            hasil = 0.5 * (hasil + angka / hasil);
+        }
+        return hasil;
+    }
+
+    public static void main(String[] args) {
+        double a = 2, b = 10, c = 5;
+
+        double D = b * b - 4 * a * c;
+        double akarD = akarKuadrat(D);
+
+        double x1 = (-b + akarD) / (2 * a);
+        double x2 = (-b - akarD) / (2 * a);
+
+        System.out.println("Persamaan: " + a + "x² + " + b + "x + " + c);
+        System.out.println("Diskriminan = " + D);
+        System.out.println("x1 = " + x1);
+        System.out.println("x2 = " + x2);
+    }
+}
