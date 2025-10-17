@@ -1,0 +1,8 @@
+    class OperatorIncrement {
+    public static void main(String[] args) {
+        int x = 8322;
+        System.out.println("Nilai awal x = " + x);
+        x++;
+        System.out.println("Setelah increment, x = " + x);
+    }
+}
