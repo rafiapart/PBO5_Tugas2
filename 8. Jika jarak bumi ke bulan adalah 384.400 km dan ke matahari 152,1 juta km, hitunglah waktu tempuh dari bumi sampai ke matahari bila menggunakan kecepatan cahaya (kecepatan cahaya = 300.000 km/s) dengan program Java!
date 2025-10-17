@@ -1,0 +1,12 @@
+class WaktuCahaya {
+    public static void main(String[] args) {
+        double jarakMatahari = 152_100_000; // km
+        double kecepatanCahaya = 300_000;   // km/s
+
+        double waktuDetik = jarakMatahari / kecepatanCahaya;
+        double waktuMenit = waktuDetik / 60;
+
+        System.out.println("Waktu tempuh cahaya dari Matahari ke Bumi:");
+        System.out.println(waktuDetik + " detik (" + waktuMenit + " menit)");
+    }
+}
