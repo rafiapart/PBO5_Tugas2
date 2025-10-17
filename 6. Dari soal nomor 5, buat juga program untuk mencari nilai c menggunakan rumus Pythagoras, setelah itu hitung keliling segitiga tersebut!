@@ -1,0 +1,18 @@
+class SegitigaPythagoras {
+    static double akarKuadrat(double angka) {
+        double hasil = angka / 2;
+        for (int i = 0; i < 10; i++) {
+            hasil = 0.5 * (hasil + angka / hasil);
+        }
+        return hasil;
+    }
+
+    public static void main(String[] args) {
+        double a = 6, b = 8;
+        double c = akarKuadrat(a * a + b * b);
+        double keliling = a + b + c;
+
+        System.out.println("Sisi miring (c) = " + c);
+        System.out.println("Keliling segitiga = " + keliling);
+    }
+}
